@@ -1,5 +1,4 @@
 let score=false
-
 console.log(typeof score);
 console.log(typeof(score));
 console.log(score);
@@ -13,3 +12,8 @@ console.log(valueInNumber);
 let isLoggedIn=true;
 let booleanIsLoggedIn=Boolean(isLoggedIn);
 console.log(isLoggedIn);
+
+let someNumber=33
+let stringNumber=String(someNumber);
+console.log(stringNumber);
+console.log(typeof stringNumber); //string
