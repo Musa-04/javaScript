@@ -31,3 +31,23 @@ const myFunction=function(){
 }
 console.log(typeof bigNumber); // boolean
 console.log(typeof heros); // function
+
+
+//+++++++++++++++++++++++++
+//stack (primitive) vs heap (reference)
+// stack: stores primitive values, fixed size, fast access
+// heap: stores reference values, dynamic size, slower access
+let myname="musa"
+let myname2=myname;
+myname2="musa2";
+console.log(myname); // musa
+console.log(myname2); // musa
+let userOne={
+    email:"user@google.com",
+    upi:"user@upi"
+
+}
+let userTwo=userOne;
+userTwo.email="musa@google.com";
+console.log(userOne.email); //
+console.log(userTwo.email); //
