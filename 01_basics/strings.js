@@ -16,3 +16,15 @@ console.log(newString);
 
 
 const anotherString=gameName.slice(-6,3)
+const newStringOne="      Mustafeez"
+console.log(newStringOne.trim());
+// console.log(newStringOne);
+
+
+const url="https://musa.com/musa%10mustafeez"
+console.log(url.replace('%10','-'));
+
+console.log(url.includes('musa'));
+console.log(url.includes('mua'));
+
+console.log(gameName.split('-'));
