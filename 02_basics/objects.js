@@ -13,16 +13,16 @@ const JSUser={
     lastLoginDays:["Monday","Saturday"]
 
 }
-// console.log(JSUser.age);
-// console.log(JSUser["email"]);
-// console.log(JSUser["full name"]);
-// console.log(JSUser[mysym]);
+console.log(JSUser.age);
+console.log(JSUser["email"]);
+console.log(JSUser["full name"]);
+console.log(JSUser[mysym]);
 
 
-// JSUser.email="musa@gmail.com"
-// Object.freeze(JSUser) //to make object immutable
-// JSUser.email="mustafeez@gmail.com"
-// console.log(JSUser);
+JSUser.email="musa@gmail.com"
+Object.freeze(JSUser) //to make object immutable
+JSUser.email="mustafeez@gmail.com"
+console.log(JSUser);
 
 JSUser.greeting=function(){
     console.log("hello this is greeting function");
