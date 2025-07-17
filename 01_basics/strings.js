@@ -27,4 +27,4 @@ console.log(url.replace('%10','-'));
 console.log(url.includes('musa'));
 console.log(url.includes('mua'));
 
-console.log(gameName.split('-'));
+console.log(gameName.split('-')); //split
