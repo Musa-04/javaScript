@@ -20,6 +20,18 @@ function addTwoNumbers(num1,num2){
 
 }
 const result= addTwoNumbers(5,8)
-console.log("Result:",result);
+// console.log("Result:",result);
 
 
+function loginUserMessage(username="samay"){
+    if(!username){
+        console.log("Please provide a username");
+        return
+        
+    }
+    return `${username}  is just logged in `
+
+
+}
+// console.log(loginUserMessage("mustafeez"));
+console.log(loginUserMessage());
