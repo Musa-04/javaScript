@@ -31,3 +31,43 @@ const myObject={
 for (const [key,value] of myObject) {
     
 }
+// //🎯 Core Topic
+// Introduces higher-order array loops in JavaScript—methods that take functions as parameters for processing arrays.
+
+// 🔍 Key Methods Covered
+// .forEach()
+
+// Iterates over elements.
+
+// Executes a callback for each item without returning a new array.
+
+// .map()
+
+// Applies a function and returns a new array of transformed values.
+
+// Great for data conversion and creating derived lists.
+
+// .filter()
+
+// Returns a subset of elements that match a given condition.
+
+// Useful for selecting items based on criteria.
+
+// .reduce()
+
+// Accumulates array values into a single result.
+
+// Common uses: summation, finding max/min, merging data structures.
+
+// 🔗 Chaining In Arrays
+// Demonstrates combining methods:
+
+// e.g. array.map(...).filter(...).reduce(...)
+
+// Highlights how chaining leads to clean, functional-style data processing pipelines.
+
+// ✅ Why It Matters
+// Promotes modular, readable, and declarative code.
+
+// Avoids repetitive for loops by encapsulating logic in callbacks and method chains.
+
