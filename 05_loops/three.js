@@ -72,3 +72,12 @@ console.log("Chained result:", chained);
 // - Promotes readable, modular code
 // - Avoids repetitive loops
 // - Makes data transformation cleaner using functional style
+
+
+const coding=["js","ruby","java","python","c++"]
+ const  values=coding.forEach((item)=>{
+    console.log(item);
+    
+
+})
+console.log(values);
