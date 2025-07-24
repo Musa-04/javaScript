@@ -1,73 +1,74 @@
-//for of
-
-const arr=[1,2,3,4,5]
+// ✅ for...of loop with arrays
+const arr = [1, 2, 3, 4, 5];
 for (const element of arr) {
-    // console.log(element);
+    console.log(element);
 }
 
-const greetings="hello world!"
+// ✅ for...of loop with strings
+const greetings = "hello world!";
 for (const greet of greetings) {
-    // console.log(`Each char is ${greet}`);
-    
-    
-}
-//Maps 
-const map= new Map()
-map.set('IN ',"india")
-map.set('USA',"United States of america")
-map.set('Fr',"France")
-console.log(map);
-
-for (const [key,value] of map) {
-    
-    // console.log(key,':-',value);
-    
+    console.log(`Each char is ${greet}`);
 }
 
-const myObject={
-    'game1':'NFS',
-    'game2':'spi'
+// ✅ Maps
+const map = new Map();
+map.set('IN', "India");
+map.set('USA', "United States of America");
+map.set('FR', "France");
+
+console.log("Map Contents:", map);
+
+for (const [key, value] of map) {
+    console.log(key, ':-', value);
 }
-for (const [key,value] of myObject) {
-    
+
+// ❌ Invalid: for...of on object (fixed below)
+const myObject = {
+    'game1': 'NFS',
+    'game2': 'Spider-Man'
+};
+
+// ✅ Correct way using Object.entries()
+for (const [key, value] of Object.entries(myObject)) {
+    console.log(key, ':-', value);
 }
-// //🎯 Core Topic
-// Introduces higher-order array loops in JavaScript—methods that take functions as parameters for processing arrays.
 
-// 🔍 Key Methods Covered
-// .forEach()
 
-// Iterates over elements.
+// 🎯 Core Topic: Higher-Order Array Methods in JavaScript
+// These methods take callback functions and help process arrays in a cleaner way.
 
-// Executes a callback for each item without returning a new array.
+// 🔍 .forEach()
+// Executes a function for each array element (no return value)
+arr.forEach((item) => {
+    console.log(`forEach item: ${item}`);
+});
 
-// .map()
+// 🔍 .map()
+// Transforms each element and returns a new array
+const doubled = arr.map((item) => item * 2);
+console.log("Mapped (doubled):", doubled);
 
-// Applies a function and returns a new array of transformed values.
+// 🔍 .filter()
+// Filters elements based on condition, returns a new array
+const even = arr.filter((item) => item % 2 === 0);
+console.log("Filtered (even numbers):", even);
 
-// Great for data conversion and creating derived lists.
+// 🔍 .reduce()
+// Reduces array to a single value (e.g., sum)
+const total = arr.reduce((acc, curr) => acc + curr, 0);
+console.log("Reduced (sum):", total);
 
-// .filter()
 
-// Returns a subset of elements that match a given condition.
+// 🔗 Chaining Example
+const chained = arr
+    .map((num) => num * 3)
+    .filter((num) => num > 10)
+    .reduce((acc, num) => acc + num, 0);
 
-// Useful for selecting items based on criteria.
+console.log("Chained result:", chained);
 
-// .reduce()
-
-// Accumulates array values into a single result.
-
-// Common uses: summation, finding max/min, merging data structures.
-
-// 🔗 Chaining In Arrays
-// Demonstrates combining methods:
-
-// e.g. array.map(...).filter(...).reduce(...)
-
-// Highlights how chaining leads to clean, functional-style data processing pipelines.
 
 // ✅ Why It Matters
-// Promotes modular, readable, and declarative code.
-
-// Avoids repetitive for loops by encapsulating logic in callbacks and method chains.
-
+// - Promotes readable, modular code
+// - Avoids repetitive loops
+// - Makes data transformation cleaner using functional style
