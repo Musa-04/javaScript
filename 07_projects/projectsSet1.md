@@ -32,7 +32,7 @@ buttons.forEach(function (button) {
 
 ```
 
-##project 2
+## project 2
 ```javascript
 const form = document.querySelector('form');
 form.addEventListener('submit', function (e) {
